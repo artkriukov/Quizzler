@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5B69D0D42D53AD22006FB657 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5B69D0D32D53AD22006FB657 /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5B69D07A2D5376CA006FB657 /* Quizzler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B69D0D42D53AD22006FB657 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = Quizzler;
 			packageProductDependencies = (
+				5B69D0D32D53AD22006FB657 /* SnapKit */,
 			);
 			productName = Quizzler;
 			productReference = 5B69D07A2D5376CA006FB657 /* Quizzler.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 5B69D0712D5376CA006FB657;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5B69D0D22D53AD22006FB657 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5B69D07B2D5376CA006FB657 /* Products */;
 			projectDirPath = "";
@@ -341,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B69D0D22D53AD22006FB657 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B69D0D32D53AD22006FB657 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B69D0D22D53AD22006FB657 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B69D0722D5376CA006FB657 /* Project object */;
 }
