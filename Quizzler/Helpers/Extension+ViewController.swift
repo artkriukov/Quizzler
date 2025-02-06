@@ -24,6 +24,8 @@ extension ViewController {
             make.edges.equalTo(view.safeAreaLayoutGuide).inset(10)
         }
         
+
+        
         trueButton.snp.makeConstraints { make in
             make.width.equalToSuperview()
             make.height.equalTo(80)
