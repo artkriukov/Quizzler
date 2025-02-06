@@ -53,22 +53,32 @@ class ViewController: UIViewController {
         let correctAnswer = currentQuestionNumber.answer
         
         if userAnswer == correctAnswer {
-            print("Correct!")
+            sender.backgroundColor = .green
         } else {
-            print("Wrong!")
+            sender.backgroundColor = .red
         }
         
         questionNumber += 1
-        updateUI()
+        
+        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     }
     
-    func updateUI() {
+    @objc func updateUI() {
         if questionNumber < question.count {
             questionLabel.text = question[questionNumber].questions
+            clearBackroundButton()
+            progressBar.progress = Float(questionNumber + 1) / Float(question.count)
         } else {
             questionNumber = 0
+            clearBackroundButton()
             questionLabel.text = question[questionNumber].questions
+            progressBar.progress = Float(questionNumber + 1)
         }
+    }
+    
+    func clearBackroundButton() {
+        trueButton.backgroundColor = .clear
+        falseButton.backgroundColor = .clear
     }
 }
 
