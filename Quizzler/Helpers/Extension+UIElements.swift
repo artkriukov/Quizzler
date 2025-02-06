@@ -20,6 +20,7 @@ extension UILabel {
         self.init()
         self.text = text
         self.font = .systemFont(ofSize: 30, weight: .bold)
+        self.numberOfLines = 0
     }
 }
 
